@@ -1,0 +1,9 @@
+<div class="divTextAreaComponente" #tooltip="matTooltip" [matTooltip]="erro" matTooltipClass="tooltipError">
+    <mat-form-field appearance="outline" class="textAreaField">
+        <mat-label [attr.for]="field" class="labelInput">{{ label }}</mat-label>
+        <textarea matInput [style]="isUppercase ? 'text-transform: uppercase' : ''" cdkTextareaAutosize
+            #autosize="cdkTextareaAutosize" #textAreaField [required]="requerido" cdkAutosizeMinRows="{{linhas}}"
+            cdkAutosizeMaxRows="{{linhas}}" [id]="field" [name]="field" [type]="type" (blur)="onTouchedCb()"
+            [attr.data-cy]="cypress" [maxlength]="maxLength" [formControl]="control"></textarea>
+    </mat-form-field>
+</div>

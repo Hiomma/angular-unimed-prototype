@@ -1,0 +1,193 @@
+<ng-container *ngIf="width > 800;else mobile">
+    <section #sectionHome class="sectionInicio">
+        <mat-toolbar style="background: transparent">
+            <mat-toolbar-row class="toolbarRow">
+                <div fxLayout="row" class="divBackgroundToolbar">
+                    <div class="divLogo">
+                        <img src="assets/photos/unimed-logo.png">
+                    </div>
+
+                    <button mat-button class="toolbarButton" (click)="goToSection('sectionHome')">Home</button>
+                    <button mat-button class="toolbarButton" (click)="goToSection('sectionNoticias')">Notícias</button>
+                    <button mat-button class="toolbarButton" (click)="goToSection('sectionSobre')">Sobre</button>
+                    <button mat-button class="toolbarButton" (click)="goToSection('sectionContato')">Contato</button>
+                </div>
+            </mat-toolbar-row>
+        </mat-toolbar>
+
+        <div class="divDescricao">
+            <div class="divDescricaoTexto">
+                <div class="divBackgroundDescricao">
+                    <h1>Unimed Sul Capixaba</h1>
+                    <h3>O maior hospital do Sul do Estado</h3>
+                </div>
+            </div>
+        </div>
+
+        <div fxLayout="column" class="divIcones" fxLayoutGap="20px">
+            <div (click)="openIcon('twitter')"><i class="flaticon-twitter"></i></div>
+            <div (click)="openIcon('facebook')"><i class="flaticon-facebook"></i></div>
+            <div (click)="openIcon('youtube')"><i class="flaticon-youtube" style="position: relative; top: 4px;"></i>
+            </div>
+            <div (click)="openIcon('instagram')"><i class="flaticon-instagram"></i></div>
+        </div>
+
+        <!-- <video autoplay muted loop class="videoBackground">
+            <source src="assets/videos/unimed.mp4" type="video/mp4">
+        </video> -->
+        <div class="video-background">
+            <div class="video-foreground">
+                <iframe width="1903" height="751"
+                    src="https://www.youtube.com/embed/kjXyRyrr1Qs?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section #sectionNoticias class="sectionNoticias">
+        <div class="divTituloNoticias">Notícias</div>
+        <div fxLayout="row" fxLayoutGap="50px" fxLayoutAlign="space-between start" class="divConteudoNoticia">
+            <div fxFlex="300px" class="divCardNoticia">
+                <img class="imgFoto" src="assets/photos/foto1.jpg">
+                <h4>Unimed Sul é reconhecida entre as instituições que transformaram o setor da saúde na última década
+                </h4>
+                <hr class="hr rosa">
+                <p>A Unimed Sul Capixaba conquistou o Prêmio Excelência da Saúde, reconhecimento oferecido... </p>
+
+                <div class="divButton">
+                    <button mat-stroked-button class="buttonLeiaMais rosa">Leia Mais</button>
+                </div>
+            </div>
+
+            <div fxFlex="300px" class="divCardNoticia">
+                <img class="imgFoto" src="assets/photos/foto2.png">
+                <h4>Unimed Sul Capixaba lança novo aplicativo do cliente</h4>
+                <hr class="hr roxoClaro">
+                <p>A fim de oferecer mais comodidade e agilidade no atendimento aos clientes, a Unimed Sul Capixaba ...
+                </p>
+
+                <div class="divButton">
+                    <button mat-stroked-button class="buttonLeiaMais roxoClaro">Leia Mais</button>
+                </div>
+            </div>
+
+            <div fxFlex="300px" class="divCardNoticia">
+                <img class="imgFoto" src="assets/photos/foto3.jpg">
+                <h4>Unimed Sul Capixaba realiza roda de conversa sobre saúde da mulher para o projeto Casa Verde</h4>
+                <hr class="hr roxo">
+                <p>A Unimed Sul Capixaba, dentro da programação especial do Outubro Rosa, que faz parte da campanha...
+                </p>
+
+                <div class="divButton">
+                    <button mat-stroked-button class="buttonLeiaMais roxo">Leia Mais</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section #sectionSobre class="sectionSobre">
+        <div class="divTituloSobre">Sobre a Empresa</div>
+        <div fxLayout="row" class="divConteudoSobre">
+            <div fxFlex="50">
+                <div class="divImagemSobre">
+                    <img src="assets/photos/hospital-novo.jpg">
+                </div>
+            </div>
+            <div fxFlex="50" class="divTextoSobre">
+                <p>O Hospital Unimed, localizado na Rodovia Engenheiro Fabiano Vivacqua (Cachoeiro - Safra), conta com
+                    uma
+                    área
+                    construída de 12.555m². Com 130 leitos, sendo 20 na Unidade de Terapia Intensiva (UTI), o hospital é
+                    qualificado para a realização de hemodinâmica, cirurgia cardíaca, neurocirurgia e transplantes, além
+                    de
+                    proporcionar a ampliação dos serviços de Oncologia, Laboratório e Unimed Diagnóstico.</p>
+
+                <p>Referência regional em saúde, a Unimed Sul Capixaba oferece assistência em todas as especialidades,
+                    atendimento clínico e cirúrgico e está preparada para receber pacientes com o mais alto grau de
+                    complexidade. Com profissionais de atestada competência, hotelaria de alto padrão, tecnologia médica
+                    de
+                    ponta, estrutura moderna e assistência humanizada as unidades oferecem todo o cuidado aos clientes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section #sectionContato class="sectionContato">
+        <div class="divTituloContato">
+            Contatos
+        </div>
+        <div class="divSectionContato">
+            <div fxFlex="50" class="divContatos">
+                <p class="pEndereco">Avenida Francisco Lacerda de Aguiar, 46</p>
+                <p class="pEndereco">Gilberto Machado Cachoeiro de Itapemirim - ES</p>
+                <p class="pEndereco">CEP: 29.303-300</p>
+
+                <p class="pTelefone">0800 286 0176</p>
+            </div>
+
+            <div class="divInputs" fxFlex="50" fxLayout="column" fxLayoutGap="20px">
+                <div>
+                    <eInput label='Título' field='titulo' [control]="resourceForm.get('titulo')" tipo="S"></eInput>
+                </div>
+                <div>
+                    <eInput label='Seu nome' field='nome' [control]="resourceForm.get('nome')" tipo="S"></eInput>
+                </div>
+                <div>
+                    <eTextArea label='Mensagem' field='mensagem' [control]="resourceForm.get('mensagem')"></eTextArea>
+                </div>
+                <div fxLayoutAlign="end end">
+                    <button mat-button fxFlex="180px" class="buttonEnviarMensagem">Enviar Mensagem</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectionFooter">
+        <div class="divConteudoFooter">
+            <div fxLayout="row" fxLayoutAlign="space-between center">
+                <div fxFlex="300px">
+                    <hr>
+                </div>
+
+                <div fxFlex="300px" class="divLogoFooter">
+                    <img src="assets/photos/unimed-logo.png">
+                </div>
+
+                <div fxFlex="300px">
+                    <hr>
+                </div>
+            </div>
+
+            <div fxLayoutAlign="space-between center" style="margin-top: 50px;">
+                <div fxFlex="300px" fxLayout="column">
+                    <button mat-button class="buttonFooter" (click)="goToSection('sectionHome')">Home</button>
+                    <button mat-button class="buttonFooter" (click)="goToSection('sectionNoticias')">Notícias</button>
+                </div>
+
+                <div fxFlex="300px" fxLayout="row" fxLayoutAlign="space-around center" class="divIcones">
+                    <div (click)="openIcon('twitter')"><i class="flaticon-twitter"></i></div>
+                    <div (click)="openIcon('facebook')"><i class="flaticon-facebook"></i></div>
+                    <div (click)="openIcon('youtube')"><i class="flaticon-youtube"
+                            style="position: relative; top: 4px;"></i>
+                    </div>
+                    <div (click)="openIcon('instagram')"><i class="flaticon-instagram"></i></div>
+                </div>
+
+                <div fxFlex="300px" fxLayout="column">
+                    <button mat-button class="buttonFooter" (click)="goToSection('sectionSobre')">Sobre</button>
+                    <button mat-button class="buttonFooter" (click)="goToSection('sectionContato')">Contato</button>
+                </div>
+            </div>
+
+            <div class="divAutor">
+                Gabriel Sereno - 2020
+            </div>
+        </div>
+    </section>
+</ng-container>
+
+<ng-template #mobile>
+    <app-home-mobile></app-home-mobile>
+</ng-template>

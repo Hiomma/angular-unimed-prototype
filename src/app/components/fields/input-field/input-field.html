@@ -1,0 +1,21 @@
+<div class="divInputComponente" #tooltip="matTooltip" [matTooltip]="erro" matTooltipClass="tooltipError">
+    <mat-form-field appearance="outline" [color]="'primary'"
+        [ngClass]="auxTipo == 'color' ? 'formCor': 'inputComponente'">
+
+        <mat-label [attr.for]="field" class="labelInput">
+            {{ label }}</mat-label>
+
+        <ng-container *ngIf="!['P', 'N', 'I'].includes(auxTipo); else inputNumero">
+            <input matInput #inputField [name]="field" (focusout)="onTouchedCb()" [type]="type" [formControl]="control"
+                [textMask]="mascara" [required]="requerido" [attr.data-cy]="cypress"
+                [ngStyle]="auxTipo != 'URL' ? {'text-transform': 'uppercase', 'text-overflow': 'ellipsis'} : {'text-overflow': 'ellipsis'}"
+                autocomplete="new-password">
+        </ng-container>
+        <ng-template #inputNumero>
+            <input matInput [attr.data-cy]="cypress" #inputField [name]="field" (focusout)="onTouchedCb()" [type]="type"
+                [imask]="mascara" [unmask]="'typed'" [formControl]="control" [required]="requerido"
+                style="text-overflow: ellipsis; text-align: right;" autocomplete="new-password">
+        </ng-template>
+
+    </mat-form-field>
+</div>

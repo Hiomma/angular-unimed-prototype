@@ -1,0 +1,539 @@
+.sectionInicio {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: block;
+
+    .imgMobile {
+        height: 365px;
+        width: 100%;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    .toolbarRow {
+        width: 1170px;
+        margin: 0px auto;
+        padding-top: 16px;
+        position: relative;
+        top: 10px;
+    }
+
+    .toolbarButton {
+        background: transparent;
+        margin-left: 16px;
+        font-size: 18px;
+        text-transform: uppercase;
+
+    }
+
+    .divBackgroundToolbar {
+        background: white;
+        padding: 20px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    .divLogo {
+        margin-right: 40px;
+
+        img {
+            width: 160px;
+        }
+    }
+
+    .divDescricao {
+        width: 100%;
+        top: 45%;
+        position: absolute;
+
+        .divDescricaoTexto {
+            position: relative;
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+        .divBackgroundDescricao {
+            background: rgba(22, 143, 89, 1);
+            width: 600px;
+            padding: 8px 16px 16px;
+            border-radius: 25px;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin: 0;
+            color: white
+        }
+
+        h3 {
+            font-size: 24px;
+            margin: 0;
+            color: white
+        }
+    }
+
+    .divIcones {
+        position: absolute;
+        top: 42%;
+        left: 50px;
+        background: rgba(255, 255, 255, 1);
+        border-radius: 25px;
+        padding: 20px;
+
+        i {
+            position: relative;
+            left: -10px;
+            cursor: pointer;
+        }
+
+        [class^="flaticon-"]:before,
+        [class*=" flaticon-"]:before,
+        [class^="flaticon-"]:after,
+        [class*=" flaticon-"]:after {
+            font-size: 28px;
+        }
+    }
+
+    .videoBackground {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+    }
+}
+
+.sectionNoticias {
+    background-color: white;
+    width: 100%;
+    position: relative;
+
+    .divConteudoNoticia {
+        width: 1170px;
+        margin: 0px auto;
+        padding: 100px 0 20px;
+    }
+
+    .divTituloNoticias {
+        position: absolute;
+        top: 30px;
+        width: 100%;
+        color: rgb(22, 143, 89);
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .imgFoto {
+        width: 300px;
+        height: 225px;
+        object-fit: cover;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    .hr {
+        width: 50px;
+
+        &.rosa {
+            border-color: rgb(237, 22, 81);
+        }
+
+        &.roxoClaro {
+            border-color: rgb(163, 35, 142);
+        }
+
+        &.roxo {
+            border-color: rgb(65, 21, 100);
+        }
+    }
+
+    p {
+        text-align: justify;
+        padding: 0 16px;
+        color: rgb(140, 140, 140);
+    }
+
+    .divCardNoticia {
+        position: relative;
+        height: 450px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+        padding-bottom: 40px;
+        height: 500px;
+    }
+
+    .divButton {
+        justify-content: center;
+        display: flex;
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+
+        .buttonLeiaMais {
+            background: transparent;
+            transition: .5s ease-in-out;
+            font-weight: bold;
+
+            &.rosa {
+                border-color: rgb(237, 22, 81);
+                color: rgb(237, 22, 81);
+
+                &:hover {
+                    transition: .5s ease-in-out;
+                    background: rgb(237, 22, 81);
+                    color: white;
+                }
+            }
+
+            &.roxo {
+                border-color: rgb(163, 35, 142);
+                color: rgb(163, 35, 142);
+
+                &:hover {
+                    transition: .5s ease-in-out;
+                    background: rgb(163, 35, 142);
+                    color: white;
+                }
+            }
+
+            &.roxoClaro {
+                border-color: rgb(65, 21, 100);
+                color: rgb(65, 21, 100);
+
+                &:hover {
+                    transition: .5s ease-in-out;
+                    background: rgb(65, 21, 100);
+                    color: white;
+                }
+            }
+
+        }
+    }
+}
+
+.sectionSobre {
+    background: #f4f4f4;
+    position: relative;
+
+    .divTituloSobre {
+        position: absolute;
+        top: 30px;
+        width: 100%;
+        color: rgb(22, 143, 89);
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .divImagemSobre {
+        img {
+            width: 90%;
+        }
+    }
+
+    .divConteudoSobre {
+        width: 1170px;
+        margin: 0px auto;
+        padding-top: 100px;
+        padding-bottom: 40px;
+
+        .divTextoSobre {
+            text-align: justify;
+        }
+    }
+}
+
+.sectionContato {
+    background: rgb(22, 143, 89);
+    height: 500px;
+    position: relative;
+
+    .divTituloContato {
+        position: absolute;
+        top: 30px;
+        width: 100%;
+        color: white;
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .divSectionContato {
+        width: 1170px;
+        margin: 0px auto;
+    }
+
+    .divInputs {
+        background: white;
+        border-radius: 10px;
+        padding: 40px 20px;
+        margin-top: 100px;
+
+        .buttonEnviarMensagem {
+            color: white;
+            background: rgb(65, 21, 100);
+            font-weight: bold;
+            font-size: 16px;
+            transition: .5s ease-in-out;
+
+            &:hover {
+                transform: scale(1.09);
+                transition: .5s ease-in-out;
+            }
+        }
+    }
+
+    .divContatos {
+        color: white;
+        margin-top: 170px;
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+
+        .pEndereco {
+            font-size: 18px;
+        }
+
+        .pTelefone {
+            font-size: 36px;
+            font-weight: bold;
+        }
+    }
+}
+
+.sectionFooter {
+    background-color: white;
+
+    .divConteudoFooter {
+        width: 1170px;
+        height: 350px;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    hr {
+        border-color: grey;
+    }
+
+    .divLogoFooter {
+        justify-content: center;
+        display: flex;
+    }
+
+    .buttonFooter {
+        background: transparent;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .divAutor {
+        width: 100%;
+        text-align: center;
+        margin-top: 40px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .divIcones {
+        padding-left: -20px;
+        position: relative;
+        left: -10px;
+    }
+
+    i {
+        cursor: pointer;
+    }
+
+    [class^="flaticon-"]:before,
+    [class*=" flaticon-"]:before,
+    [class^="flaticon-"]:after,
+    [class*=" flaticon-"]:after {
+        font-size: 28px;
+
+
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+    .sectionInicio {
+        .divIcones {
+            left: unset !important;
+            right: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sectionInicio {
+        height: 420px !important;
+
+        mat-toolbar {
+            background: white;
+        }
+
+        .videoBackground {
+            margin-top: 56px;
+        }
+
+        .toolbarRow {
+            top: unset !important;
+            width: unset !important;
+
+            .divLogo {
+                padding: 8px 0;
+                width: 100%;
+                justify-content: center;
+                display: flex;
+            }
+
+            video {
+                margin-top: 36px !important;
+            }
+        }
+
+        .divDescricao {
+            position: relative;
+            top: 60%;
+
+            .divDescricaoTexto {
+                width: unset !important;
+                margin: unset !important;
+                text-align: center;
+                padding: 0 16px;
+            }
+
+            .divBackgroundDescricao {
+                width: unset !important;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .sectionNoticias {
+        width: unset;
+        margin: unset;
+        padding: 4px 16px;
+
+        .divConteudoNoticia {
+            overflow-x: scroll;
+            width: 100%;
+        }
+    }
+
+    .sectionSobre {
+        .divTituloSobre {
+            top: 10px
+        }
+
+        .divImagemSobre {
+            img {
+                width: 100%;
+            }
+        }
+
+
+        .divConteudoSobre {
+            width: 100%;
+            margin: unset;
+            padding: 0 16px;
+            padding-top: 80px;
+
+        }
+    }
+
+    .sectionContato {
+        height: 650px;
+
+        .divTituloContato {
+            top: 10px;
+        }
+
+        .divSectionContato {
+            width: 100%;
+            margin: unset;
+            padding: 0 16px;
+        }
+
+        .divContatos {
+            margin-top: 60px;
+        }
+
+        .divInputs {
+            margin-top: 30px;
+        }
+    }
+
+    .sectionFooter {
+        width: 100%;
+        margin: unset;
+        padding-top: 20px;
+
+        .divIcones {
+            width: 80%;
+            padding-left: 20%;
+        }
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+.video-background {
+    background: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99;
+}
+
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#vidtop-content {
+    top: 0;
+    color: #fff;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground {
+        height: 300%;
+        top: -100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video-foreground {
+        width: 300%;
+        left: -100%;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .vid-info .acronym {
+        display: none;
+    }
+}

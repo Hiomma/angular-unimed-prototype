@@ -1,1 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0 !important;
+}
+
+
+:root {
+    //cores do gradiente: #29335F #423156 #AE272C
+    --gradient: linear-gradient(to right, #29335f, #2f325d, #34325c, #39315a, #3d3158, #49315b, #55305c, #612e5c, #792959, #902250, #a22040, #ae272c);
+
+    --primary: #423156;
+
+    --azul: #3B86FF;
+    --azulEscuro: #29335F;
+    --branco: white;
+    --cinza: #758391;
+    --cinzaClaro: #F4F4F7;
+    --danger: #FF4D4F;
+    --preto: #313944;
+    --rosa: #ff4081;
+    --roxo: #423156;
+    --verde: #5FE3A1;
+    --verdeEscuro: #28a745;
+    --vermelho: #FF6565;
+    --vermelhoEscuro: #AE272C;
+}
